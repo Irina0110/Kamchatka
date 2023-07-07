@@ -27,7 +27,7 @@ export const BookingButton = styled.div`
   border-radius: 5px;
   border: 1px solid var(--primary, #275553);
   color: var(--primary, #275553);
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,7 @@ export const BookingButton = styled.div`
 
 export const NavLink = styled.a`
   color: var(--primary, #275553);
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
