@@ -3,6 +3,8 @@ import AutoSlider from "@/components/AutoSlider";
 import TimetableIcon from "@/assets/Timetable-icon.svg";
 import InstagramIcon from '@/assets/InstagramIcon.svg';
 import FacebookIcon from '@/assets/FacebookIcon.svg';
+import CardSlider from "@/components/CardSlider";
+import {Slider1} from "@/utils/slider-cards.static.ts";
 
 const Preview = () => {
     return (
@@ -25,9 +27,7 @@ const Preview = () => {
                         <S.ButtonIcon src={InstagramIcon}/>
                     </S.Contacts>
                 </S.BlockSection>
-                <S.BlockSection>
-
-                </S.BlockSection>
+                <CardSlider arr={Slider1}/>
             </S.Block>
 
         </S.Preview>

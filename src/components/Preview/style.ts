@@ -6,7 +6,7 @@ export const Preview = styled.div`
 
 export const Title = styled.h3`
   color: #FFF;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
@@ -22,7 +22,7 @@ export const Label = styled.h5`
   background: linear-gradient(143deg, #FB8B62 0%, #F47648 100%), #F47648;
   backdrop-filter: blur(34px);
   color: #FFF;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -66,6 +66,7 @@ export const ButtonIcon = styled.img`
 
 export const Block = styled.div`
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   height: 40%;
 `;

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Image = styled.img`
-  object-fit: cover;
+  width: inherit;
 `;
 
 export const Slider = styled.div`

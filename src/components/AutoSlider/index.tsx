@@ -3,9 +3,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
-import {Autoplay, Pagination, EffectFade} from 'swiper/modules';
-import Background1 from '@/assets/Background-1.svg';
-import Background2 from '@/assets/Background-2.png';
+import {Autoplay, EffectFade} from 'swiper/modules';
+import Background1 from '@/assets/Background-1.jpeg';
+import Background2 from '@/assets/Background-2.jpg';
 import Background3 from '@/assets/Background-3.jpeg';
 import * as S from './style';
 
@@ -16,10 +16,7 @@ const AutoSlider = () => {
                 autoplay={{delay: 5000, disableOnInteraction: false}}
                 speed={2000}
                 effect={'fade'}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Autoplay, Pagination, EffectFade]}
+                modules={[Autoplay, EffectFade]}
             >
                 <SwiperSlide><S.Image src={Background1}/></SwiperSlide>
                 <SwiperSlide><S.Image src={Background2}/></SwiperSlide>
