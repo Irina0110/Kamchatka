@@ -39,6 +39,11 @@ const Description = () => {
                 <S.KamchatkaImg src={KamchatkaImg} />
                 <S.AirplaneImg src={Airplane}/>
             </S.ImagesBlock>
+            <S.ReviewBlock>
+                <S.ReviewTitle>Камчатка – земля великолепной заснеженной природы, действующих вулканов и диких мест, где ещё не ступала нога человека.</S.ReviewTitle>
+                <S.Quote>“Когда мы подлетали к Камчатке, у меня захватило дух от увиденного. Это за гранью реальности. Невероятно!”</S.Quote>
+                <S.Sign>Максим, <u>@max_max</u></S.Sign>
+            </S.ReviewBlock>
 
         </S.Description>
     )

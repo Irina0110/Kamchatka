@@ -4,16 +4,19 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 6%;
+  height: 100%;
+  overflow: hidden;
   position: relative;
-  background-image: linear-gradient(rgb(255,255,255), rgba(255,255,255,0));
+  background-image: linear-gradient(rgb(255,255,255), rgba(0,0,0,0), rgb(0,0,0));
 `;
 
 export const Background = styled.img`
   position: absolute;
+  display: block;
   left: 0;
   z-index: -1;
   width: 100%;
-  top: 40%;
+  top: 27%;
 `;
 
 export const Title = styled.h1`
@@ -103,4 +106,41 @@ export const AirplaneImg = styled.img`
   position: absolute;
   right: -15%;
   transform: rotate(3.3deg);
+`;
+
+export const ReviewBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ReviewTitle = styled.h5`
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  width: 662px;
+  margin-bottom: 32px;
+`;
+
+export const Quote = styled.span`
+  color: #DEDEDE;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 299px;
+  margin-bottom: 13px;
+`;
+
+export const Sign = styled.span`
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 147px;
 `;
