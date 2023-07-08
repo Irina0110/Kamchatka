@@ -12,7 +12,6 @@ export const BodyStyles = css`
 
   #root {
     height: 10%;
-    padding: 2% 6% 0;
     background-image: linear-gradient(rgb(255,255,255), rgba(255,255,255,0));
   }
   

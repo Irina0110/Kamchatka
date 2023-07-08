@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 
 export const Preview = styled.div`
-  height: 833px;
+  height: 675px;
+  padding: 0 6% 0;
 `;
 
 export const Title = styled.h3`

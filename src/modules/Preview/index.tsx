@@ -1,4 +1,4 @@
-import * as S from './style'
+import * as S from './style.ts'
 import AutoSlider from "@/components/AutoSlider";
 import TimetableIcon from "@/assets/Timetable-icon.svg";
 import InstagramIcon from '@/assets/InstagramIcon.svg';

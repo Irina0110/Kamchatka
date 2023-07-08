@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
-import Preview from "@/components/Preview";
+import Preview from "src/modules/Preview";
+import Description from "@/modules/Description";
 
 const Main = () => {
     return (
         <div>
             <Header/>
             <Preview/>
+            <Description/>
         </div>
 
     )
