@@ -2,10 +2,10 @@ import * as S from './style.ts';
 import Background from '@/assets/Background-5.png';
 import CardSlider from "@/components/CardSlider";
 import {Slider2} from '@/utils/slider-cards.static.ts';
-import CLouds from '@/assets/Clouds.png';
+import Clouds from '@/assets/Clouds.png';
 
 const FirstDay = () => {
-    return (
+   return (
         <S.FirstDay>
             <S.Background src={Background}/>
             <S.TextBlock>
@@ -23,9 +23,9 @@ const FirstDay = () => {
                     завтрашнего дня.</S.Paragraph>
             </S.TextBlock>
             <S.Slider>
-                <CardSlider arr={Slider2}/>
+                <CardSlider arr={Slider2} view={'main'} />
             </S.Slider>
-            <S.Clouds src={CLouds}/>
+            <S.Clouds src={Clouds}/>
         </S.FirstDay>
     )
 }

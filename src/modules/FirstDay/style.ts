@@ -4,7 +4,7 @@ export const FirstDay = styled.div`
   display: flex;
   justify-content: space-between;
   padding-left: 6%;
-  height: 700px;
+  height: 900px;
   overflow: hidden;
   position: relative;
   background-image: linear-gradient(rgb(0,0,0), rgba(0,0,0,0));
@@ -65,5 +65,5 @@ export const Clouds = styled.img`
   left: 0;
   z-index: -1;
   width: 100%;
-  bottom: -35%;
+  bottom: -28%;
 `;

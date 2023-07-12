@@ -11,7 +11,7 @@ import { FC } from "react";
 import './style.css';
 
 
-const CardSlider: FC<CardSliderProps> = ({arr, navigation= false}) =>{
+const CardSlider: FC<CardSliderProps> = ({arr, navigation= false, view = "main"}) =>{
     const swiper = useSwiper();
     return (
         <S.Slider>
@@ -24,12 +24,23 @@ const CardSlider: FC<CardSliderProps> = ({arr, navigation= false}) =>{
                     disabledClass: 'disable',
                 }}
                 modules={[Navigation]}
-                className="mySwiper"
+
             >
                 {
                     arr.map((item, index) =>  (
                         <SwiperSlide key={index} >{({ isActive }) => (
-                            <S.Image src={item.img} isActive={isActive}/>
+                            <>
+                                <S.Image src={item.img} isActive={isActive} view={view as "main" | "header"}/>
+                                {item.title &&
+                                    (<S.Text isActive={isActive}>{item.title}</S.Text> )
+                                }
+                                {
+                                    item.description && (
+                                        <S.Description isActive={isActive}>{item.description}</S.Description>
+                                    )
+                                }
+                            </>
+
                         )}</SwiperSlide>
                     ))
                 }

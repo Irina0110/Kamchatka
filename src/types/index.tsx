@@ -6,4 +6,5 @@ export type ICard = {
 export default interface CardSliderProps {
     arr: ICard[],
     navigation?: boolean,
+    view?: string,
 }

@@ -27,7 +27,7 @@ const Preview = () => {
                         <S.ButtonIcon src={InstagramIcon}/>
                     </S.Contacts>
                 </S.BlockSection>
-                <CardSlider arr={Slider1}/>
+                <CardSlider arr={Slider1} view={'header'}/>
             </S.Block>
 
         </S.Preview>
