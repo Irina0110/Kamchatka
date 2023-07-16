@@ -19,7 +19,7 @@ interface ButtonGroupProps {
 }
 
 export const Slider = styled.div`
-  width: 40vw;
+  width: 50vw;
   display: block;
 `;
 

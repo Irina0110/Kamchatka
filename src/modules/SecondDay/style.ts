@@ -1,32 +1,23 @@
 import styled from "@emotion/styled";
 
-export const FirstDay = styled.div`
+export const SecondDay = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-left: 6%;
-  height: 900px;
+  height: 860px;
   overflow: hidden;
   position: relative;
-  background-image: linear-gradient(rgb(0,0,0), rgba(0,0,0,0));
 `;
-
-export const Background = styled.img`
-  position: absolute;
-  display: block;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  top: -1%;
-`;
-
 export const Title = styled.h2`
   padding-top: 65px;
-  color: white;
+  color: #212121;
   font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 50px;
+  margin-bottom: 48px;
 `;
 
 export const OrangeText = styled.span`
@@ -36,34 +27,29 @@ export const OrangeText = styled.span`
 export const TextBlock = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
-`;
-
-export const Slider = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 60%;
 `;
 
 export const Paragraph = styled.span`
-  color: #ACACAC;
+  color: #313131;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 25px;
+  //width: 70%;
 `;
 
-export const WhiteText = styled.span`
-  color: white;
-`;
-
-export const Clouds = styled.img`
+export const Background = styled.img`
   position: absolute;
   display: block;
-  left: 0;
+  right: 0;
   z-index: -1;
-  width: 100%;
-  bottom: -23%;
+`;
+
+export const SliderBlock = styled.div`
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 1.5fr 1fr;
 `;
