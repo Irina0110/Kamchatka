@@ -2,7 +2,7 @@ import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import CardSliderProps from '@/types';
+import {ICardSlider} from '@/types';
 import * as S from './style';
 
 // import required modules
@@ -11,7 +11,7 @@ import { FC } from "react";
 import './style.css';
 
 
-const CardSlider: FC<CardSliderProps> = ({arr, navigation= false, view = "main"}) =>{
+const CardSlider: FC<ICardSlider> = ({arr, navigation= false, view = "main"}) =>{
     const swiper = useSwiper();
     return (
         <S.Slider>

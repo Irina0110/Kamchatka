@@ -3,8 +3,14 @@ export type ICard = {
     description?: string,
     img: string,
 }
-export default interface CardSliderProps {
+export interface ICardSlider {
     arr: ICard[],
     navigation?: boolean,
     view?: string,
+}
+
+export interface IWaitingCard {
+    img: string,
+    title: string,
+    description: string,
 }
