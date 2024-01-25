@@ -4,6 +4,7 @@ import Description from "@/modules/Description";
 import FirstDay from "@/modules/FirstDay";
 import SecondDay from "@/modules/SecondDay";
 import Waiting from "@/modules/Waitings";
+import ThirdDay from "@/modules/ThirdDay";
 
 const Main = () => {
     return (
@@ -14,6 +15,7 @@ const Main = () => {
             <FirstDay/>
             <SecondDay/>
             <Waiting/>
+            <ThirdDay/>
         </div>
 
     )
