@@ -15,10 +15,11 @@ PET project created to develop skills in working with the emotion library
 ## Built With
 
 [![React][React.js]][React-url]
-[![TypeScript][Typescript.js]][Typescript-url]
-[![Vite][Vite.js]][Vite-url]
-[![Emotion][Emotion.js]][Emotion-url]
-[![SCSS][SCSS.js]][SCSS-url]
+[![TypeScript][Typescript]][Typescript-url]
+[![Vite][Vite]][Vite-url]
+[![Emotion][Emotion]][Emotion-url]
+[![SCSS][SCSS]][SCSS-url]
+[![ghpages][ghpages]][ghpages-url]
 
 ---
 ## Installation
@@ -55,18 +56,22 @@ PET project created to develop skills in working with the emotion library
 
 [React-url]: https://reactjs.org/
 
-[Typescript.js]:    https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[Typescript]:    https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
 
 [Typescript-url]:https://www.typescriptlang.org/
 
-[Vite.js]: https://img.shields.io/badge/Vite-007ACC?style=for-the-badge&logo=vite&color=black
+[Vite]: https://img.shields.io/badge/Vite-007ACC?style=for-the-badge&logo=vite&color=black
 
 [Vite-url]: https://vitejs.dev/
 
-[Emotion.js]: https://img.shields.io/badge/emotion-8A2BE2
+[Emotion]: https://img.shields.io/badge/Emotion-9933CC?style=for-the-badge
 
 [Emotion-url]: https://emotion.sh/docs/introduction
 
-[SCSS.js]: https://img.shields.io/badge/SCSS-007ACC?style=for-the-badge\&logo=SASS&color=white
+[SCSS]: https://img.shields.io/badge/SCSS-007ACC?style=for-the-badge\&logo=SASS&color=white
 
 [SCSS-url]: https://sass-scss.ru/guide/
+
+[ghpages]: https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white
+
+[ghpages-url]: https://github.com/tschaub/gh-pages
