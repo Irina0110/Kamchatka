@@ -21,7 +21,7 @@ const FirstDay = () => {
             </S.TextBlock>
             <S.Slider>
                 <CardSlider arr={Slider2} view={'main'} paginationClassname={'light'}/>
-            </S.Slider>=
+            </S.Slider>
         </S.FirstDay>
     )
 }

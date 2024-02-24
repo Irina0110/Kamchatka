@@ -17,6 +17,7 @@ export const Background = styled.img`
   z-index: -1;
   width: 100%;
   top: 27%;
+  height: 100%;
 `;
 
 export const Title = styled.h1`
