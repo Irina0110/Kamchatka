@@ -7,10 +7,9 @@ import * as S from './style';
 import { Navigation  } from 'swiper/modules';
 import { FC } from "react";
 import './style.scss';
-import ArrowRight from "@/assets/Pagination-right-light.svg?react";
 
 
-const CardSlider: FC<ICardSlider> = ({arr, navigation= false, view = "main", isLightPagination = true}) =>{
+const CardSlider: FC<ICardSlider> = ({arr, navigation= false, view = "main", paginationClassname}) =>{
     const swiper = useSwiper();
 
     return (
@@ -21,8 +20,8 @@ const CardSlider: FC<ICardSlider> = ({arr, navigation= false, view = "main", isL
                 width={500}
                 effect={'cards'}
                 navigation={{
-                    prevEl: '.prev',
-                    nextEl: '.next',
+                    prevEl: `.prev--${paginationClassname}`,
+                    nextEl: `.next--${paginationClassname}`,
                     disabledClass: 'disable',
                 }}
                 modules={[Navigation]}
@@ -31,16 +30,18 @@ const CardSlider: FC<ICardSlider> = ({arr, navigation= false, view = "main", isL
                 {
                     arr.map((item, index) =>  (
                         <SwiperSlide key={index}>{({isActive}) => (
-                            <div className={isActive ? `active-slide--${view}` : `slide--${view}`}>
+                            <div className={`slide--${view}`}>
                                 <img src={item.img}/>
-                                {item.title &&
-                                    (<S.Text>{item.title}</S.Text> )
-                                }
-                                {
-                                    item.description && (
-                                        <S.Description>{item.description}</S.Description>
-                                    )
-                                }
+                                <div>
+                                    {item.title &&
+                                        (<S.Text>{item.title}</S.Text> )
+                                    }
+                                    {
+                                        item.description && (
+                                            <S.Description>{item.description}</S.Description>
+                                        )
+                                    }
+                                </div>
                             </div>
 
                         )}</SwiperSlide>
@@ -48,13 +49,8 @@ const CardSlider: FC<ICardSlider> = ({arr, navigation= false, view = "main", isL
                 }
             </Swiper>
             <S.ButtonGroup right={navigation}>
-                <S.Button className={'prev'} onClick={() => swiper.slidePrev()}>
-                    <ArrowRight fill={isLightPagination ? '#fff' : '#000000'}/>
-
-                </S.Button>
-                <S.Button className={'next'} onClick={() => swiper.slideNext()}>
-                    <ArrowRight/>
-                </S.Button>
+                <S.Button theme={paginationClassname} className={`prev--${paginationClassname}`} onClick={() => swiper.slidePrev()}/>
+                <S.Button theme={paginationClassname} className={`next--${paginationClassname}`} onClick={() => swiper.slideNext()}/>
             </S.ButtonGroup>
         </S.Slider>
     );

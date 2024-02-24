@@ -8,5 +8,5 @@ export interface ICardSlider {
     arr: ICard[],
     navigation?: boolean,
     view?: string,
-    isLightPagination?: boolean
+    paginationClassname: 'dark' | 'light'
 }

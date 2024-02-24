@@ -8,6 +8,7 @@ export const SecondDay = styled.div`
   height: 860px;
   overflow: hidden;
   position: relative;
+  padding-bottom: 40px;
 `;
 export const Title = styled.h2`
   padding-top: 65px;

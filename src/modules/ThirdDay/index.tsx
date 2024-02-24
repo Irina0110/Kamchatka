@@ -1,14 +1,14 @@
-import * as S from './style.ts';
+import * as S from './style';
 import Background from '@/assets/Background-7.png';
 import CardSlider from "@/components/CardSlider";
-import {Slider2} from "@/utils/slider-cards.static.ts";
+import {Slider2} from "@/utils/slider-cards.static";
 
 const ThirdDay = () => {
     return (
         <S.ThirdDay>
             <S.Background src={Background}/>
             <S.Content>
-                <CardSlider arr={Slider2}/>
+                <CardSlider arr={Slider2} paginationClassname={'dark'} navigation={true}/>
                 <S.TextBlock>
                     <S.Title><S.OrangeText>День 3.</S.OrangeText>&#160;Горные цирки и водопады вулкана
                         Вачкажец</S.Title>

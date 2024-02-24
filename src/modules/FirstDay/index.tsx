@@ -1,13 +1,10 @@
-import * as S from './style.ts';
-import Background from '@/assets/Background-5.png';
+import * as S from './style';
 import CardSlider from "@/components/CardSlider";
-import {Slider2} from '@/utils/slider-cards.static.ts';
-import Clouds from '@/assets/Clouds.png';
+import {Slider2} from '@/utils/slider-cards.static';
 
 const FirstDay = () => {
    return (
         <S.FirstDay>
-            <S.Background src={Background}/>
             <S.TextBlock>
                 <S.Title><S.OrangeText>День 1.</S.OrangeText>&#160;Прибытие. Встреча в аэропорту и размещение</S.Title>
                 <S.Paragraph>С высоты птичьего полета вы увидите знаменитые «домашние» вулканы – Корякский, Авачинский и
@@ -23,9 +20,8 @@ const FirstDay = () => {
                     завтрашнего дня.</S.Paragraph>
             </S.TextBlock>
             <S.Slider>
-                <CardSlider arr={Slider2} view={'main'} />
-            </S.Slider>
-            <S.Clouds src={Clouds}/>
+                <CardSlider arr={Slider2} view={'main'} paginationClassname={'light'}/>
+            </S.Slider>=
         </S.FirstDay>
     )
 }

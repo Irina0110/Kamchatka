@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-
 export const FirstDay = styled.div`
   display: flex;
   justify-content: space-between;
@@ -7,7 +6,8 @@ export const FirstDay = styled.div`
   height: 900px;
   overflow: hidden;
   position: relative;
-  background-image: linear-gradient(rgb(0,0,0), rgba(0,0,0,0));
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), center /cover url(../../src/assets/Background-5.png), lightgray 50% / cover no-repeat;
+
 `;
 
 export const Background = styled.img`
@@ -59,7 +59,7 @@ export const WhiteText = styled.span`
   color: white;
 `;
 
-export const Clouds = styled.img`
+export const Clouds = styled.div`
   position: absolute;
   display: block;
   left: 0;

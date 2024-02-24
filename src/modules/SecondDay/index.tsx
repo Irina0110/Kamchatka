@@ -1,7 +1,7 @@
-import * as S from './style.ts';
+import * as S from './style';
 import Background from '@/assets/Background-6.png';
 import CardSlider from "@/components/CardSlider";
-import {Slider2} from "@/utils/slider-cards.static.ts";
+import {Slider2} from "@/utils/slider-cards.static";
 
 const SecondDay = () => {
     return (
@@ -17,7 +17,7 @@ const SecondDay = () => {
                 <S.Background src={Background}/>
             </S.TextBlock>
             <S.SliderBlock>
-                <CardSlider arr={Slider2} view={'main'}/>
+                <CardSlider arr={Slider2} view={'main'} paginationClassname={'dark'} navigation={true}/>
                 <S.TextBlock>
                     <S.Paragraph>Выезд из отеля в 10.00. Переезд в верховья реки Паратунка к подножию вулкана
                         Вилючинский. Обзорная пешеходная экскурсия к водопаду Вилючинский. Термос с чаем, шоколад.

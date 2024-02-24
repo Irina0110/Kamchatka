@@ -18,6 +18,9 @@ interface ButtonGroupProps {
     right: boolean,
 }
 
+interface PaginationTheme {
+    theme: 'dark' | 'light',
+}
 export const Slider = styled.div`
   width: 40vw;
   display: block;
@@ -34,11 +37,11 @@ export const ButtonGroup = styled.div<ButtonGroupProps>`
   justify-content: ${(props) => props.right ? 'flex-end' : 'flex-start'};
 `;
 
-export const Button = styled.div`
+export const Button = styled.div<PaginationTheme>`
   cursor: pointer;
   user-select: none;
   border-radius: 50%;
-  border: 1px solid white;
+  border: ${(props) => props?.theme === 'light' ? '1px solid white' : '1px solid black'};
   width: 38px;
   height: 38px;
 `;
