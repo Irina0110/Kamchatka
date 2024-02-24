@@ -63,7 +63,7 @@ PET project created to develop skills in working with the emotion library
 
 [Vite-url]: https://vitejs.dev/
 
-[Emotion.js]: https://img.shields.io/badge/emotion?labelColor=ffffff&color=8A2BE2
+[Emotion.js]: https://img.shields.io/badge/emotion-8A2BE2
 
 [Emotion-url]: https://emotion.sh/docs/introduction
 
