@@ -1,8 +1,8 @@
 import * as S from './style.ts';
-import {IWaitingCard} from "@/types";
+import {ICard} from "@/types";
 import {FC} from "react";
 
-const WaitingCard: FC<IWaitingCard> = ({img, title, description}) => {
+const WaitingCard: FC<ICard> = ({img, title, description}) => {
     return(
         <S.Card>
             <S.Img src={img} alt={'card icon'}/>

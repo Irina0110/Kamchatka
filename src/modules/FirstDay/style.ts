@@ -65,5 +65,5 @@ export const Clouds = styled.img`
   left: 0;
   z-index: -1;
   width: 100%;
-  bottom: -23%;
+  bottom: -11%;
 `;

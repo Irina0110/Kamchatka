@@ -98,7 +98,7 @@ export const KamchatkaImg = styled.img`
 
 export const ImagesBlock = styled.div`
   position: relative;
-  height: 350px;
+  height: 300px;
   overflow: hidden;
 `;
 
@@ -142,5 +142,4 @@ export const Sign = styled.span`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 147px;
 `;
